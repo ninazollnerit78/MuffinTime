@@ -1,0 +1,672 @@
+body{
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top{
+    background-color: rgb(248, 195, 195);
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.top img{
+    width: 200px;
+
+    animation-name: muffin;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes muffin{
+    0%{
+        left: 0px;
+    }
+    50%{
+        right: 0px;
+        transform: rotate(30deg);
+    }
+    100%{
+        left: 0px;
+        transform: rotate(-30deg);
+    }
+}
+
+.top h1{
+    font-size: 80px;
+    margin-left: 20px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(197, 139, 139); 
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.nav ul li{
+    display: inline;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(236, 153, 153);
+}
+
+.nav ul li:hover{
+    border: 3px solid rgb(236, 153, 153);
+    transition: 0.3s ease;
+    padding: 15px 25px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(248, 195, 195);
+    text-shadow: 2px 2px 2px rgb(224, 162, 162);
+}
+
+.first{
+    width: 90%;
+    height: 60%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.first img{
+    width: 1000px;
+    box-shadow: 10px 5px 15px 5px rgb(76, 68, 68);
+}
+
+.first img:hover{
+    box-shadow: 15px 10px 15px 10px rgb(76, 68, 68); 
+    transition: 0.5s ease;
+}
+
+.porfirst{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.porfirst a{
+    color: rgb(248, 195, 195);
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    font-size: 35px; 
+    text-shadow: 2px 2px 2px rgb(196, 142, 142);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.porfirst a:hover{
+    font-size: 38px; 
+    transition: 0.5s ease;
+}
+
+.second{
+    width: 90%;
+    height: 60%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.second img{
+    width: 1000px;
+    box-shadow: 10px 5px 15px 5px rgb(76, 68, 68);
+}
+
+.second img:hover{
+    box-shadow: 15px 10px 15px 10px rgb(76, 68, 68); 
+    transition: 0.5s ease;
+}
+
+.porsecond{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.porsecond a{
+    color: rgb(248, 195, 195);
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    font-size: 35px; 
+    text-shadow: 2px 2px 2px rgb(196, 142, 142);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.porsecond a:hover{
+    font-size: 38px; 
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 420px){
+    .top{
+        width: 570px;
+        height: 200px;
+        display: block; 
+        padding-top: 10px; 
+        
+    }
+
+    .top h1{
+        font-size: 55px;
+        margin-top: 60px;
+    }
+
+    .top img{
+        float: left;
+        margin-left: 20px;
+    }
+
+    .nav{
+        width: 570px;
+        height: 150px;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .nav ul li{
+        padding-bottom: 10px;
+        display: inline-block;
+       
+    }
+
+    .nav a{
+        font-size: 20px;
+    }
+
+    .first{
+        width: 570px;
+    }
+
+    .first img{
+        display: block;
+        width: 90%;
+    }
+
+    .porfirst a{
+        text-align: center;
+    }
+
+    .second{
+        width: 570px;
+    }
+
+    .second img{
+        display: block;
+        width: 90%;
+    }
+
+    .porsecond a{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .top{
+        width: 610px;
+        height: 200px;
+        display: block; 
+        padding-top: 10px; 
+        
+    }
+
+    .top h1{
+        font-size: 55px;
+        margin-top: 60px;
+    }
+
+    .top img{
+        float: left;
+        margin-left: 20px;
+    }
+
+    .nav{
+        width: 610px;
+        height: 150px;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .nav ul li{
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .nav a{
+        font-size: 20px;
+    }
+
+    .first{
+        width: 610px;
+    }
+
+    .first img{
+        display: block;
+        width: 90%;
+    }
+
+    .porfirst{
+        width: 610px;
+        padding-left: 10px;
+    }
+
+    .second{
+        width: 610px;
+    }
+
+    .second img{
+        display: block;
+        width: 90%;
+    }
+
+    .porsecond{
+        width: 610px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .top{
+        width: 960px;
+        height: 200px;
+        display: flex; 
+        padding-top: 10px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top h1{
+        font-size: 65px;
+        margin-top: 60px;
+    }
+
+    .top img{
+        float: left;
+        margin-left: 20px;
+    }
+
+    .nav{
+        width: 960px;
+        height: 100px;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .nav ul li{
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    .nav a{
+        font-size: 20px;
+    }
+
+    .first{
+        width: 960px;
+    }
+
+    .first img{
+        display: block;
+        width: 90%;
+    }
+
+    .porfirst{
+        width: 960px;
+        padding-left: 10px;
+    }
+
+    .second{
+        width: 960px;
+    }
+
+    .second img{
+        display: block;
+        width: 90%;
+    }
+
+    .porsecond{
+        width: 960px;
+        padding-left: 10px;
+    }
+}
+
+.nasonama{
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(248, 195, 195) ;
+}
+
+.nasonama h1{
+    font-size: 45px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.onama{
+    width: 95%;
+    height: auto;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    
+}
+
+.onama img{
+    float: left;
+    height: 800px;
+    width: 50%;
+    width: 1000px;
+    box-shadow: 10px 5px 15px 5px rgb(76, 68, 68);
+}
+
+.onama p{
+    color: rgb(248, 195, 195);
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.nasproizvodi{
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    background-color: rgb(248, 195, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nasproizvodi h1{
+    font-size: 45px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.proizvodi{
+    width: 95%;
+    height: auto;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+}
+
+.proizvodi img{
+    float: right;
+    height: 800px;
+    width: 50%;
+    width: 1000px;
+    box-shadow: 10px 5px 15px 5px rgb(76, 68, 68);
+}
+
+.proizvodi p{
+    color: rgb(248, 195, 195);
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.nasmuffins{
+    width: 40%;
+    height: 50%;
+    margin: 0px auto;
+    background-color: rgb(248, 195, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nasmuffins h2{
+    font-size: 35px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.muffins{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.muffins img{
+    display: inline;
+    width: 33%;
+    height: 500px;
+    margin: 30px 5px;
+}
+
+.textmuffins{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.textmuffins p{
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(248, 195, 195);
+    margin: 10px 200px;
+    font-style: oblique;
+    text-shadow: 2px 2px 2px rgb(218, 164, 164);
+}
+
+.naskontakt{
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    background-color: rgb(248, 195, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naskontakt h1{
+    font-size: 45px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.porkontakt{
+    color: rgb(248, 195, 195);
+    font-size: 30px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px rgb(196, 142, 142);
+}
+
+.kontakt{
+    background-image: url(slike/muffinpattern.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    display: block;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.kontakt h3{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.adresa{
+    color: black;
+    text-align: center;
+}
+
+.vreme{
+    color: black;
+    text-align: center;
+}
+
+.telefon a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nasprijava{
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 195, 195);
+}
+
+.nasprijava h1{
+    font-size: 45px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.porprijava{
+    color: rgb(248, 195, 195);
+    font-size: 30px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px rgb(196, 142, 142);
+}
+
+.prijava{
+    background-image: url(slike/muffinpattern.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    display: flex;
+}
+
+.prijava form{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.button{
+    margin: 0px auto;
+}
+
+.button:hover{
+    transform: translateX(200px);
+    transition: 2s ease;
+
+}
+
+.nasgalerija{
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(248, 195, 195) ;
+}
+
+.nasgalerija h1{
+    font-size: 45px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 4px 4px 4px rgb(218, 164, 164);
+}
+
+.textgalerija{
+    width: 100%;
+    height: 40%;
+    display: block;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center; 
+}
+
+.textgalerija p{
+    font-size: 30px;
+    color: rgb(248, 195, 195);
+    text-align: justify;
+    padding: 30px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.textgalerija h2{
+    font-size: 35px;
+    color: rgb(236, 153, 153);
+    font-style: oblique;
+    text-shadow: 2px 2px 2px rgb(218, 164, 164);
+    text-align: center;
+}
+
+.galerija{
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+} 
+
+.galerija img{
+    display: inline;
+    margin: 60px;
+    box-shadow: 10px 5px 15px 5px rgb(76, 68, 68);
+}
